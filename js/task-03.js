@@ -16,7 +16,6 @@ const images = [
 
 const findUl = document.querySelector('.gallery');
 const imgArray = images.map((el) => {
-  return `<li><img class "gallery-image" src = "${el.url}" alt = "${el.alt}" width = 450px></img></li>`
-});
+  return `<li><img class "gallery-image" src = "${el.url}" alt = "${el.alt}" width = 450px></img></li>`}).join(" ");
 
 findUl.insertAdjacentHTML('afterbegin', imgArray);
